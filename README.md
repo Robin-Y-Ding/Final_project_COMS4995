@@ -35,3 +35,5 @@ First, please create the following repository tree in the current location. This
 Please call the method `draw_tsne(inputs, labels)` defined at `line 216-line 224` in `utils.py` when you hope to plot data points of any version of data using tSNE. A demo example to teach users how to draw tSNE plots is provided at line `152-155` in `standard_training.py`. Please reverse the comments and run the code to see the demo. Any numpy data with labels can be plotted by this method.
 
 Due to the reproduction is very complicated and time-consuming, I didn't automate this process in the current version. Please check the video and the final report for the full results. Sorry for any incovenience.
+
+__Any other questions regarding the results reproduction, please directly email or slack me. I will be more than happy to help. Thanks!__
