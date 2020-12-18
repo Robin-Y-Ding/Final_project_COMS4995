@@ -1,5 +1,6 @@
 # Defensive Perturbation to Improve Robustness of Deep Neural Networks.
 ### Code for final project of COMS4995 Deep Learning for Computer Vision.
+__Note: Github doesn't allow large files uploading, so the following instruction will guide users to train the model from scratch, a GPU is preferred to finish the training.__
 ### Usage
 #### Results for RQ1:
 1. Train the model on MNIST: `python3 standard_training.py`. The outputs will contain the accuracy on non-training data without any attack.
