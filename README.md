@@ -2,6 +2,32 @@
 ### Code for final project of COMS4995 Deep Learning for Computer Vision.
 __Note: Github doesn't allow large files uploading, so the following instruction will guide users to train the model from scratch, a GPU is preferred to finish the training.__
 ### Usage
+First, please create the following repository tree in the current location. This step is __required__ to move forward
+```
+├── app
+│   ├── data
+│   │   ├── dp
+│   ├── log
+│   │   ├──MNIST
+│   │   |   ├──linf
+│   │   |   |   ├──data
+│   │   |   |   |   ├──train
+│   │   |   |   |   ├──valid
+│   │   |   |   ├──label
+│   │   |   |   |   ├──train
+│   │   |   |   |   ├──valid
+│   │   |   ├──l2
+│   │   |   |   ├──data
+│   │   |   |   |   ├──train
+│   │   |   |   |   ├──valid
+│   │   |   |   ├──label
+│   │   |   |   |   ├──train
+│   │   |   |   |   ├──valid
+│   └── ckpt
+├── README.md
+└── **.py
+```
+
 #### Results for RQ1:
 1. Train the model on MNIST: `python3 standard_training.py`. The outputs will contain the accuracy on non-training data without any attack.
 2. Attack the model: 1) Linf-PGD: `python3 dp.py -p linf -k 20 -e 0.2 -a 0.01` 2) L2-PGD: `python3 dp.py -p linf -k 40 -e 2.5 -a 0.075`. The output will fistly show the attack results on original data, and then generate defensive perturbation and evaluate the accuracy on defensive data.
